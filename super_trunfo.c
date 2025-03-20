@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main (){
-
-char estado[1];
+//nao está funcionandoa linha 22 
+char estado[1];a 
 char codigodacarta[3];
 char cidade[30];
 int populacao;
