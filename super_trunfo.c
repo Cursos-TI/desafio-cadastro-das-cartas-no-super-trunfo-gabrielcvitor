@@ -6,7 +6,7 @@ char codigodacarta[3]; //código da carta
 char cidade[30]; //nome da cidade
 int populacao = 1234; //população com valor inicial 1234
 float area = 4321; //area da cidade com valor inicial 4321
-float pib = 10000; //pib da cidade com valor inicial 10000 
+float pib = 10000; //pib da cidade com valor inicial 10000
 int pontosturisticos = 15; //pontos turisticos com valor inicial 15
 float densidade = (float) populacao / area; //numero de pessoas por km²
 float pibpercapita = (float) pib / populacao; //riquiza media das pessoas (PIB/POPULAÇAO)
