@@ -131,16 +131,16 @@ superPoder2 = populacao2 + (unsigned long int) area2 + (unsigned long int) ponto
   printf("Densidade Populacional: %.3f hab/km²\n", densidade2);
   printf("PIB per Capita: %.2f reais\n", pibpercapita2);
 
-//Exibir resultado da comparação das cartas
-printf("Comparação das cartas:\n");
-printf("População: Carta 1 venceu %d \n", populacao1 > populacao2);
-printf("Área: Carta 1 venceu %d\n", area1 > area2);
-printf("PIB: Carta 1 venceu %d\n", pib1 > pib2);
-printf("Pontos Turísticos: Carta 1 venceu %d\n", pontosturisticos1 > pontosturisticos2);
-printf("Densidade Populacional: Carta 1 venceu %d\n", densidade1 < densidade2);
-printf("PIB per Capita: Carta 1 venceu %d\n", pibpercapita1 > pibpercapita2);
-printf("Super Poder: Carta 1 venceu %d\n", superPoder1 > superPoder2);
+//Comparação das cartas levando em conta o número de pontos turísticos
+printf("Comparação das cartas (Atributo : Pontos Turisticos)\n");
+printf("Carta 1 -  %s: %d pontos turisticos\n", cidade1, pontosturisticos1);
+printf("Carta 2 -  %s: %d pontos turisticos\n", cidade2, pontosturisticos2);
 
+if( pontosturisticos1 > pontosturisticos2) {
+    printf("A carta 1 venceu\n");
+}else {
+    printf(" A carta 2 venceu\n");
+}
 
   return 0;
 }
